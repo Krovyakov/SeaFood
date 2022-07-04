@@ -96,7 +96,82 @@ body{
 }
 
 .header-slider{
-    max-width: 410px;
+    max-width: 522px;
     padding-left: 112px;
-    
+    padding-top: 57px;
+    padding-bottom: 135px;
+
+}
+
+.header-slider-text{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color:#fff
+
+}
+
+.slick-prev,
+.slick-next{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    left:40px;
+
+}
+
+.slick-prev{
+    top:0;
+
+}
+
+.slick-next{
+    bottom: 0;
+}
+
+.slick-dots{
+    list-style: none;
+    position: absolute;
+    left: 35px;
+    top:58px;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.slick-dots button{
+    border:none;
+    background-color: transparent;
+    padding: 0;
+    color:#fff;
+    font-size:24px;
+    line-height: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.slick-active button{
+    opacity:1;
+}
+
+.slick-dots button::before{
+    content:'0';
+}
+
+.header__content-btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 23px;
+    line-height: 32px;
+    padding: 14px 88px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.5);
+    margin-left: 112px;
+    display: inline-block;
+    transform: translateY(-100px);
 }
