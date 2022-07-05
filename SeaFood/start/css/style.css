@@ -78,8 +78,11 @@ body{
 .header__content{
     background-image: url(../images/header-bg.png);
     background-size: cover ;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    padding-bottom: 20px;
+    margin-top: -100px;
+    min-height: calc(100vh - 50px);
 }
 
 .title{
@@ -89,7 +92,7 @@ body{
     line-height: 95px;
     color: #001E64;
     max-width: 589px;
-    padding-top: 200px;
+    padding-top: 190px;
     padding-left: 112px;
     margin-bottom: 130px;
 
@@ -174,4 +177,20 @@ body{
     margin-left: 112px;
     display: inline-block;
     transform: translateY(-100px);
+    position: absolute;
+}
+
+.header__content-box{
+    display: flex;
+    margin-left: 100%;
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+
+    
+}
+
+.header__content-link--active{
+    font-weight: 700;
 }
